@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        float a1=sc.nextFloat();
+        float a2=sc.nextFloat();
+        float a3=sc.nextFloat();
+        float sum=a1+a2+a3;
+        if(sum==180){
+            System.out.println("Triangle is Formed");
+        }else{
+            System.out.println("Triangle is not Formed");
+        }
+}
+}
