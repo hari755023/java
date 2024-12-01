@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class screen{
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int integer=sc.nextInt();
+        sc.nextLine();
+        String ch=sc.nextLine();
+        char cha=sc.next().charAt(0);
+        System.out.println(integer +"\n"+ ch +"\n"+ cha);
+    }
+
+}
