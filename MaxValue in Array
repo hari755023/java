@@ -1,0 +1,25 @@
+import java.util.Arrays;
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Size Of the Array");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        System.out.println("Enter the"+n+"Values");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+            System.out.println(Arrays.toString(arr));
+        System.out.println(max(arr));
+    }
+    static int max(int[] arr){
+        int maxval=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>maxval){
+                maxval=arr[i];
+            }
+        }
+        return maxval;
+    }
+}
